@@ -1,0 +1,123 @@
+{
+  "text": "I hope this is enough tweets for my assignment",
+  "created": "Wed Nov 29 17:50:47 +0000 2017"
+}{
+  "text": "I hate the Dallas cowboys, why are they on my twitter account",
+  "created": "Wed Nov 29 17:50:26 +0000 2017"
+}{
+  "text": "My Golden Retriever loves to howl at the moon. It's annoying but cool.",
+  "created": "Wed Nov 29 17:49:56 +0000 2017"
+}{
+  "text": "I'm wearing a blue shirt",
+  "created": "Wed Nov 29 17:49:06 +0000 2017"
+}{
+  "text": "#Download #FREE #Kelvin – Bootstrap Resume Theme #bootstrap #html #css https://t.co/YODX95HT3c via @BsThemesCo",
+  "created": "Thu Nov 23 03:32:46 +0000 2017"
+}{
+  "text": "I hope this is enough tweets for my assignment",
+  "created": "Wed Nov 29 17:50:47 +0000 2017"
+}{
+  "text": "I hate the Dallas cowboys, why are they on my twitter account",
+  "created": "Wed Nov 29 17:50:26 +0000 2017"
+}{
+  "text": "My Golden Retriever loves to howl at the moon. It's annoying but cool.",
+  "created": "Wed Nov 29 17:49:56 +0000 2017"
+}{
+  "text": "I'm wearing a blue shirt",
+  "created": "Wed Nov 29 17:49:06 +0000 2017"
+}{
+  "text": "#Download #FREE #Kelvin – Bootstrap Resume Theme #bootstrap #html #css https://t.co/YODX95HT3c via @BsThemesCo",
+  "created": "Thu Nov 23 03:32:46 +0000 2017"
+}{
+  "Artist": "Michael Jackson",
+  "Name": "Billie Jean",
+  "Link": "https://open.spotify.com/track/5ChkMS8OtdzJeqyybCc9R5",
+  "Album": "Thriller 25 Super Deluxe Edition"
+}{
+  "Artist": "Nirvana",
+  "Name": "Smells Like Teen Spirit",
+  "Link": "https://open.spotify.com/track/5ghIJDpPoe3CfHMGu71E6T",
+  "Album": "Nevermind (Remastered)"
+}{
+  "Artist": "Zippy Kid",
+  "Name": "Gangham Style",
+  "Link": "https://open.spotify.com/track/3jDAIKeNEXmdDZvwOig6cU",
+  "Album": "Gangham Stlye"
+}{
+  "Artist": "Bob Marley & The Wailers",
+  "Name": "Buffalo Soldier",
+  "Link": "https://open.spotify.com/track/7BfW1eoDh27W69nxsmRicb",
+  "Album": "Confrontation"
+}{
+  "Name": "Encino Man",
+  "Year": "1992",
+  "imdbRating": "5.7",
+  "rottenRating": "15%",
+  "Production": "USA",
+  "Language": "English",
+  "Plot": "When they find a frozen caveman in their back yard, two high school outcasts thaw him and introduce him to modern life while he in turn gets them to actually enjoy life.",
+  "Actors": "Sean Astin, Brendan Fraser, Pauly Shore, Megan Ward"
+}{
+  "Name": "Arthur Christmas",
+  "Year": "2011",
+  "imdbRating": "7.1",
+  "rottenRating": "92%",
+  "Production": "UK, USA",
+  "Language": "English",
+  "Plot": "Santa's clumsy son Arthur gets put on a mission with St. Nick's father to give out a present they misplaced to a young girl in less than 2 hours.",
+  "Actors": "James McAvoy, Hugh Laurie, Bill Nighy, Jim Broadbent"
+}{
+  "Name": "Arsenic and Old Lace",
+  "Year": "1944",
+  "imdbRating": "8.0",
+  "rottenRating": "88%",
+  "Production": "USA",
+  "Language": "English, German",
+  "Plot": "A drama critic learns on his wedding day that his beloved maiden aunts are homicidal maniacs, and that insanity runs in his family.",
+  "Actors": "Cary Grant, Priscilla Lane, Raymond Massey, Jack Carson"
+}{
+  "Artist": "Backstreet Boys",
+  "Name": "I Want It That Way",
+  "Link": "https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6",
+  "Album": "The Hits--Chapter One"
+}{
+  "Artist": "Ace of Base",
+  "Name": "The Sign",
+  "Link": "https://open.spotify.com/track/3DYVWvPh3kGwPasp7yjahc",
+  "Album": "Greatest Hits"
+}{
+  "Artist": "blackbear",
+  "Name": "top priority (with Ne-Yo)",
+  "Link": "https://open.spotify.com/track/2yjwPmZ3XKKoVVPzKQ9d0o",
+  "Album": "cybersex"
+}{
+  "Artist": "Ace of Base",
+  "Name": "The Sign",
+  "Link": "https://open.spotify.com/track/3DYVWvPh3kGwPasp7yjahc",
+  "Album": "Greatest Hits"
+}{
+  "text": "I hope this is enough tweets for my assignment",
+  "created": "Wed Nov 29 17:50:47 +0000 2017"
+}{
+  "text": "I hate the Dallas cowboys, why are they on my twitter account",
+  "created": "Wed Nov 29 17:50:26 +0000 2017"
+}{
+  "text": "My Golden Retriever loves to howl at the moon. It's annoying but cool.",
+  "created": "Wed Nov 29 17:49:56 +0000 2017"
+}{
+  "text": "I'm wearing a blue shirt",
+  "created": "Wed Nov 29 17:49:06 +0000 2017"
+}{
+  "text": "#Download #FREE #Kelvin – Bootstrap Resume Theme #bootstrap #html #css https://t.co/YODX95HT3c via @BsThemesCo",
+  "created": "Thu Nov 23 03:32:46 +0000 2017"
+}{
+  "Artist": "Ace of Base",
+  "Name": "The Sign",
+  "Link": "https://open.spotify.com/track/3DYVWvPh3kGwPasp7yjahc",
+  "Album": "Greatest Hits"
+}{
+  "Artist": "Milli Vanilli",
+  "Name": "Blame It on the Rain",
+  "Link": "https://open.spotify.com/track/2dPpQv8sCPeEaA4oz7ZjQC",
+  "Album": "Greatest Hits"
+}

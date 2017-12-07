@@ -22,6 +22,8 @@
   "homepage": "https://github.com/ljreader/theRealLiriApp#readme",
   "dependencies": {
     "fs": "0.0.1-security",
+    "inquirer": "^4.0.1",
+    "node-spotify-api": "^1.0.7",
     "request": "^2.83.0",
     "simple-node-logger": "^0.93.33",
     "spotify": "^0.3.0",
