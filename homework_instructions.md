@@ -6,32 +6,32 @@ In this assignment, you will make LIRI. LIRI is like iPhone's SIRI. However, whi
 
 ### Before You Begin
 
-<!-- 1. LIRI will display your latest tweets. As we do not want to display your personal account, or its keys, please make an alias account and add a few tweets to it! -->
+1. LIRI will display your latest tweets. As we do not want to display your personal account, or its keys, please make an alias account and add a few tweets to it!
 
-<!-- 2. Make a new GitHub repository called liri-node-app and clone it to your computer. -->
+2. Make a new GitHub repository called liri-node-app and clone it to your computer.
 
-<!-- 3. To retrieve the data that will power this app, you'll need to send requests to the Twitter, Spotify and OMDB APIs. You'll find these Node packages crucial for your assignment.
+3. To retrieve the data that will power this app, you'll need to send requests to the Twitter, Spotify and OMDB APIs. You'll find these Node packages crucial for your assignment.
 
-   * [Twitter](https://www.nnnpmjs.com/package/twitter)
+   * [Twitter](https://www.npmjs.com/package/twitter)
    
    * [Spotify](https://www.npmjs.com/package/node-spotify-api)
    
    * [Request](https://www.npmjs.com/package/request)
      
-     * You'll use Request to grab data from the [OMDB API](http://www.omdbapi.com). -->
+     * You'll use Request to grab data from the [OMDB API](http://www.omdbapi.com).
 
-<!-- ### Instructions
+### Instructions
 
-1. Initialize a `package.json` file at your project root. Be sure to save all of the npm packages you'll be using to this file. If you fail to initialize a `package.json` file and save your dependencies to it, it will be troublesome, and at times almost impossible for anyone else to run your code. -->
+1. Initialize a `package.json` file at your project root. Be sure to save all of the npm packages you'll be using to this file. If you fail to initialize a `package.json` file and save your dependencies to it, it will be troublesome, and at times almost impossible for anyone else to run your code.
 
-<!-- 2. Make a .gitignore file and add the following lines to it. This will tell git not to track these files, and thus they won't be committed to Github.
+2. Make a .gitignore file and add the following lines to it. This will tell git not to track these files, and thus they won't be committed to Github.
 
 ```
 node_modules
 .DS_Store
 ```
- -->
-<!-- 3. Make a JavaScript file named `keys.js`. **Do Not** add this file to the .gitignore. This would be a good thing to do in the real world, but it makes grading this assignment a challenge.
+
+3. Make a JavaScript file named `keys.js`. **Do Not** add this file to the .gitignore. This would be a good thing to do in the real world, but it makes grading this assignment a challenge.
 
 Inside keys.js your file will look like this:
 
@@ -46,7 +46,7 @@ var twitterKeys = {
 }
 
 module.exports = twitterKeys;
-<!-- ```
+```
 
 4. Get your Twitter API keys by following these steps:
 
@@ -55,22 +55,22 @@ module.exports = twitterKeys;
    * Step Two: Fill out the form with dummy data. Type `http://google.com` in the Website input. Don't fill out the Callback URL input. Then submit the form.
    
    * Step Three: On the next screen, click the Keys and Access Tokens tab to get your consume key and secret. 
-      -->
-  <!--  Copy and paste them where the `<input here>` tags are inside your keys.js file. -->
-   
-   <!-- * Step Four: At the bottom of the page, click the `Create my access token` button to get your access token key and secret.  -->
      
-  <!-- * Copy the access token key and secret displayed at the bottom of the next screen. Paste them where the `<input here>` tags are inside your keys.js file. --> -->
+     * Copy and paste them where the `<input here>` tags are inside your keys.js file.
+   
+   * Step Four: At the bottom of the page, click the `Create my access token` button to get your access token key and secret. 
+     
+     * Copy the access token key and secret displayed at the bottom of the next screen. Paste them where the `<input here>` tags are inside your keys.js file.
 
-<!-- 5. Make a file called `random.txt`.
+5. Make a file called `random.txt`.
 
    * Inside of `random.txt` put the following in with no extra characters or white space:
      
      * spotify-this-song,"I Want it That Way"
 
-6. Make a JavaScript file named `liri.js`. -->
+6. Make a JavaScript file named `liri.js`.
 
-<!-- 7. At the top of the `liri.js` file, write the code you need to grab the data from keys.js. Then store the keys in a variable. -->
+7. At the top of the `liri.js` file, write the code you need to grab the data from keys.js. Then store the keys in a variable.
 
 8. Make it so liri.js can take in one of the following commands:
 

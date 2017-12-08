@@ -1,5 +1,6 @@
 //-- In this assignment, you will make LIRI. LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a _Language_ Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.
 
+//-- Using the `fs` Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
 var fs = require("fs");
 
 var inquirer = require("inquirer");
@@ -11,11 +12,7 @@ inquirer.prompt([
         name: "coolThings"
     }
 
-//  8. Make it so liri.js can take in one of the following commands:
-//-- * `my-tweets`
-//-- * `spotify-this-song`
-//-- * `movie-this`
-//-- * `do-what-it-says`
+//-- Make it so liri.js can take in one of the following commands:`my-tweets`, `spotify-this-song`, `movie-this`, `do-what-it-says`.
 ]).then(function(user){
     switch (user.coolThings) {
         case "My Tweets":
@@ -33,14 +30,14 @@ inquirer.prompt([
     };
 });
 
-// 1. `node liri.js my-tweets`
-//-- * This will show your last 20 tweets and when they were created at in your terminal/bash window.
+//-- The code needed to grab the data from keys.js. Then store the keys in a variable.
 function twitter() {
     var twitter = require('twitter');
     var keys = require("./keys.js");
     var t = new twitter(keys);
 
-    var params = {
+//-- This will show your last 20 tweets and when they were created.
+var params = {
         screen_name: "@JLush76",
         count: 20
         };
@@ -62,12 +59,7 @@ function twitter() {
     });
 };
 
-//-- 2. `node liri.js spotify-this-song '<song name here>'`
-//-- * This will show the following information about the song in your terminal/bash window
-//-- * Artist(s)
-//-- * The song's name
-//-- * A preview link of the song from Spotify
-//-- * The album that the song is from
+//-- `node liri.js spotify-this-song '<song name here>'`
 function spotify(answer) {
    
     if (answer.spotifyName) {
@@ -85,12 +77,14 @@ function spotify(answer) {
                 Link: song.external_urls.spotify,
                 Album: song.album.name
             };
-            console.log("#################################");
-            console.log("# Artist: " + songsObject.Artist);
-            console.log("# Song Name: " + songsObject.Name);
-            console.log("# Listen: " + songsObject.Link);
-            console.log("# Album: " + songsObject.Album);
-            console.log("#################################");
+
+//-- This will show the following information about the song in your terminal/bash window: rtist(s), the song's name, a preview link of the song from Spotify, the album that the song is from:
+console.log("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-");
+            console.log("* Artist: " + songsObject.Artist);
+            console.log("* Song Name: " + songsObject.Name);
+            console.log("* Listen: " + songsObject.Link);
+            console.log("* Album: " + songsObject.Album);
+            console.log("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-");
 
             fs.appendFileSync("log.txt", JSON.stringify(songsObject, null, 2));
 
@@ -98,11 +92,17 @@ function spotify(answer) {
             console.error('Error occurred: ' + err); 
         });
     } else {
+
+//-- You will utilize the [node-spotify-api] package in order to retrieve song information from the Spotify API.        
         var Spotify = require('node-spotify-api');
+        
+//-- Spotify API credentials.
         var spotify = new Spotify({
             id: "761cc4c64d7a4cc5946c3c3d7de2868c",
             secret: "351cf552a888409097d9c99d7b478e79"
         });
+
+//-- If no song is provided then your program will default to "The Sign" by Ace of Base. Changed to "Blame it on the Rain" by Milli Vanilli.
         var uri = "https://api.spotify.com/v1/tracks/2dPpQv8sCPeEaA4oz7ZjQC";
         spotify.request(uri).then(function(data) {
             var songsObject = {
@@ -111,13 +111,13 @@ function spotify(answer) {
                 Link: data.external_urls.spotify,
                 Album: data.album.name
             };
-            console.log("#################################");
+            console.log("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-");
             console.log("# Artist: " + songsObject.Artist);
             console.log("# Song Name: " + songsObject.Name);
             console.log("# Listen: " + songsObject.Link);
             console.log("# Album: " + songsObject.Album);
-            console.log("#################################");
-
+            console.log("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-");
+            
             fs.appendFileSync("log.txt", JSON.stringify(songsObject, null, 2));
 
         }).catch(function(err) {
@@ -149,7 +149,8 @@ function omdb() {
     ]).then(function(movie){
         if (movie.omdb) {
             var request = require("request");
-            var queryUrl = "http://www.omdbapi.com/?t=" + movie.omdb + "&apikey=faa36345";
+//-- OMDb API key 114fc106
+            var queryUrl = "http://www.omdbapi.com/?t=" + movie.omdb + "&apikey=114fc106";
             request(queryUrl, function(error, response, body){
                 if (!error && response.statusCode === 200) {
                     var moviesObject = {
@@ -162,7 +163,7 @@ function omdb() {
                         Plot: JSON.parse(body).Plot,
                         Actors: JSON.parse(body).Actors
                     };
-                    console.log("**************************************************************");
+                    console.log("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-");
                     console.log("* The movie is: " + moviesObject.Name);
                     console.log("* Released Year: " + moviesObject.Year);
                     console.log("* IMDB Rating: " + moviesObject.imdbRating);
@@ -171,14 +172,16 @@ function omdb() {
                     console.log("* Languages: " + moviesObject.Language);
                     console.log("* Plot of the movie: " + moviesObject.Plot);
                     console.log("* Actors: " + moviesObject.Actors);
-                    console.log("**************************************************************");
-
+                    console.log("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-");
+                    
                     fs.appendFileSync("log.txt", JSON.stringify(moviesObject, null, 2));
                 };
-            });
+            });0
         } else {
             var request = require("request");
-            var queryUrl = "http://www.omdbapi.com/?t=mr+nobody&apikey=faa36345";
+
+            //-- If the user doesn't type a movie in, the program will output data for the movie 'Mr. Nobody.' Changed to Ernest Saves Christmas.
+            var queryUrl = "http://www.omdbapi.com/?t=ernest+saves+christmas&apikey=114fc106";
             request(queryUrl, function(error, response, body){
                 if (!error && response.statusCode === 200) {
                     var moviesObject = {
